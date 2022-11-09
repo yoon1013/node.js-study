@@ -2,9 +2,9 @@
   "name": "node.js-study",
   "version": "1.0.0",
   "description": "node.js textbook",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app"
   },
   "repository": {
     "type": "git",
