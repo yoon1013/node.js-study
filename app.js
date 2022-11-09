@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path'); //파일을 보내고 싶으면 path 모듈 필요
 
 const app = express();
 /* 서버가 실행될 포트 설정
@@ -15,7 +16,8 @@ express 모듈에서는 res.write, res.end 대신 res.send 사용
 app.post, app.put, app.patch, app.delete, app.option 등으로 사용하면 됨
  */
 app.get('/', (req,res) => {
-    res.send('Hello Express');
+    //res.send('Hello Express');
+    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 /*app.get(키: 여기서는 port)로 포트 연결 */
