@@ -1,0 +1,15 @@
+1. npm이란
+* Node Package Manager
+* 대부분 자바스크립트 프로그램은 npm에 패키지로 등록되어 있으므로 필요한 기능은 npm에서 설치하면 됨
+* 패키지: npm에 업로드된 노드 모듈
+
+2. package.json
+* 설치한 패키지의 버전을 관리하는 파일
+* 노드 프로젝트 시작하기 전에 폴더 내부에 무조건 package.json부터 만들고 시작하기!!!!
+* npm init
+* script 부분은 npm 명령어를 저장하는 부분
+
+3. entry point
+* 자바스크립트 실행 파일 진입점
+* 마지막에 module.exports하는 파일
+* app.js or index.js
